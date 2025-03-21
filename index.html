@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Website Tailwind</title>
+    <!-- Tailwind CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#090D28]">
+    <header>
+        <!-- This is Navbar -->
+        <div class="bg-[#090D28] shadow-sm">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 text-white rounded-box z-1 text-lg mt-3 w-52 p-2 shadow">
+                            <li><a class="text-[#EA377B]">Home</a></li>
+                            <li><a>Packages</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Contact US</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-xl"><img src="logo33 (3).jpg" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-white text-lg">
+                        <li><a class="text-[#EA377B]">Home</a></li>
+                        <li><a>Packages</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Contact US</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-5 text-lg">
+                    <a class="text-white"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="text-white"><i class="fa-regular fa-user"></i></a>
+                    <a class="text-white"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- This is Hero Section -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="hero-overlay"></div>
+                <img src="https://us.123rf.com/450wm/christovstudio/christovstudio2207/christovstudio220700098/188857290-war-machine-vintage-riffle-gun-weapon-line-pop-art-logo-colorful-design-with-dark-background.jpg?ver=6" class="w-full" />
+                <div class="absolute md:left-96 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <div class="hero-content text-neutral-content">
+                        <div class="max-w-sm md:max-w-xl">
+                            <h1 class="mb-5 text-2xl md:text-5xl font-bold">COME & CREATE YOUR
+                                OWN <span class="text-[#EA377B]">New</span> WEAPON</h1>
+                            <p class="mb-5">
+                                upgrade your weapon to Tactical mode Foxtrot
+                                with Armed to the Teeth WAR PRD.
+                            </p>
+                            <button class="btn bg-[#EA377B] border-none text-white md:text-lg">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="https://i.ytimg.com/vi/0G4YraIsMH4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCd--9jW0EgHYtrDM5ZY_Y6pN7u_Q" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="https://i.ytimg.com/vi/aqhQpKaWzKA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDqRp3eerBoMxGnoIXG-idWmqUS4g" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="https://i.pinimg.com/736x/e3/a1/e2/e3a1e273ce7c739b9a0e526a45b14d84.jpg" class="w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- This is banner bottom section -->
+        <section class="container mx-auto bg-white mt-12 mb-12 rounded-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-14 py-14">
+                <div class="border border-[#EA377B] px-5 py-6 text-center rounded space-y-3">
+                    <i class="fa-solid fa-truck-fast text-5xl text-[#EA377B]"></i>
+                    <h2 class="text-2xl font-medium">Free Shipping</h2>
+                    <p>Contrary to popular belief
+                        is simply random.</p>
+                </div>
+                <div class="border border-[#EA377B] px-5 py-6 text-center rounded space-y-3">
+                    <i class="fa-regular fa-credit-card text-5xl text-[#EA377B]"></i>
+                    <h2 class="text-2xl font-medium">Instant Payments</h2>
+                    <p>Contrary to popular belief
+                        is simply random.</p>
+                </div>
+                <div class="border border-[#EA377B] px-5 py-6 text-center rounded space-y-3">
+                    <i class="fa-solid fa-repeat text-5xl text-[#EA377B]"></i>
+                    <h2 class="text-2xl font-medium">Exchange & Returns</h2>
+                    <p>Contrary to popular belief
+                        is simply random.</p>
+                </div>
+                <div class="border border-[#EA377B] px-5 py-6 text-center rounded space-y-3">
+                    <i class="fa-solid fa-headset text-5xl text-[#EA377B]"></i>
+                    <h2 class="text-2xl font-medium">Customer Services</h2>
+                    <p>Contrary to popular belief
+                        is simply random.</p>
+                </div>
+            </div>
+        </section>
+        <!-- This is category section -->
+        <section class="container mx-auto mb-20">
+            <div class="flex justify-between items-center text-white mb-8">
+                <h1 class="text-2xl font-medium">Category</h1>
+                <p class="text-lg">See all</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 ">
+                <div class="bg-[#1B1F3E] px-10 py-5 text-center rounded space-y-3">
+                    <img class="mx-auto" src="https://cdn-icons-png.flaticon.com/512/7675/7675034.png" alt="">
+                    <h1 class="text-2xl font-medium text-[#F5F5F5]">AK-47 RUSSIAN</h1>
+                </div>
+                <div class="bg-[#1B1F3E] px-10 py-5 text-center rounded space-y-3">
+                    <img class="mx-auto" src="https://cdn-icons-png.flaticon.com/512/1693/1693466.png" alt="">
+                    <h1 class="text-2xl font-medium text-[#F5F5F5]">M4-ASSAULT</h1>
+                </div>
+                <div class="bg-[#1B1F3E] px-10 py-5 text-center rounded space-y-3">
+                    <img class="mx-auto" src="https://cdn-icons-png.freepik.com/512/5328/5328938.png" alt="">
+                    <h1 class="text-2xl font-medium text-[#F5F5F5]">MG-30</h1>
+                </div>
+                <div class="bg-[#1B1F3E] px-10 py-5 text-center rounded space-y-3">
+                    <img class="mx-auto" src="https://cdn-icons-png.freepik.com/512/1500/1500841.png" alt="">
+                    <h1 class="text-2xl font-medium text-[#F5F5F5]">SPEKNAZ-32</h1>
+                </div>
+            </div>
+        </section>
+        <!-- This is Training Section -->
+        <section class="container mx-auto mb-20">
+            <div class="flex justify-between items-center text-white mb-8">
+                <h1 class="text-2xl font-medium">Explore Our  Training Programs</h1>
+                <p class="text-lg">See all</p>
+            </div>
+            <div>
+                <!-- This is 1st row -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div>
+                        <img src="https://www.therange702.com/wp-content/uploads/2022/12/range-702-black-ops-shooting-experience-1.jpg" alt="">
+                        <button class="btn w-full bg-[#EA377BE6] border-none text-white text-lg">SHOOTING RANGE</button>
+                    </div>
+                    <div>
+                        <img src="https://i.ytimg.com/vi/VGb_RfdfcVw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBaK1HTMX-gfA-sgiQ4c78SFYmVNQ" alt="">
+                        <button class="btn w-full bg-[#EA377BE6] border-none text-white text-lg">HAND TO HAND COMBAT</button>
+                    </div>
+                    <div>
+                        <img src="https://www.shootingcracow.com/wp-content/uploads/2022/07/comb3-1024x695.jpg" alt="">
+                        <button class="btn w-full bg-[#EA377BE6] border-none text-white text-lg">TACTICAL SHOOTING</button>
+                    </div>
+                    <div>
+                        <img src="https://thefirearmfirm.com/wp-content/uploads/2022/08/firearm-purchase.webp" alt="">
+                        <button class="btn w-full bg-[#EA377BE6] border-none text-white text-lg">WEAPON SERVICE</button>
+                    </div>
+                </div>
+                
+      
+            
+       
+        
+        <!-- This is About Section -->
+        <section class="container mx-auto mt-20 mb-20">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-6/12">
+                    <img src="421.jpg" alt="">
+                </div>
+                <div class="md:w-6/12">
+                    <p class="text-white leading-8">Weapon shops and training centers offer a wide range
+                        of services designed to cater to individuals interested in firearms,
+                        self-defense, or combat training. Heres a breakdown of the services they typically provide
+                        services they typically provide
+                        Weapon shops may provide repair services for firearms, including cleaning, fixing jams, replacing parts, or general maintenance to ensure the gun operates properly <br> <br>
+
+
+                        Weapon shops and training centers often collaborate to provide comprehensive services, helping customers not only acquire firearms and accessories but also develop the skills needed for responsible ownership and use. <br> <br>
+
+                        We give the best servies to our customers and armed forces of pakistan and overseas commandos
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- this is WHY CHOOSE US -->
+        <section class="container mx-auto mt-20 mb-20">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-6/12">
+                    <p class="text-white leading-8">I have served 3-years in Pakistan ARMED FORCES as a weapon 
+                        contractor rank 2 wings 1-security clearance  <br> <br>
+
+
+                        We will give the best services for your safety of your weapons <br> <br>
+
+                        so that you can use it easily and perfectly in the scene of self defense or in combat 
+                        situation 
+                    </p>
+                </div>
+                <div class="md:w-6/12">
+                    <img src="422.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- This is facility section -->
+        <section class="container mx-auto mb-20">
+            <h1 class="text-2xl font-medium text-center text-white mb-8">Facilities</h1>
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-white text-center space-y-3 bg-[#1B1F3E] py-7 rounded-xl">
+                    <img class="mx-auto" src="https://i.ibb.co.com/p6zMKYhW/Fitness-Equipment.png" alt="">
+                    <h2 class="text-xl">Body Equipment</h2>
+                </div>
+                <div class="text-white text-center space-y-3 bg-[#1B1F3E] py-7 rounded-xl">
+                    <img class="mx-auto" src="https://i.ibb.co.com/ynkZry37/Qualified-Trainer.png" alt="">
+                    <h2 class="text-xl">Qualified Trainer</h2>
+                </div>
+                <div class="text-white text-center space-y-3 bg-[#1B1F3E] py-7 rounded-xl">
+                    <img class="mx-auto" src="https://i.ibb.co.com/fzpGPPBT/Individual-Locker.png" alt="">
+                    <h2 class="text-xl">Individual Locker</h2>
+                </div>
+                <div class="text-white text-center space-y-3 bg-[#1B1F3E] py-7 rounded-xl">
+                    <img class="mx-auto" src="https://i.ibb.co.com/B5GzcwdZ/Fully-Secured-Area.png" alt="">
+                    <h2 class="text-xl">Fully Secured Area</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="bg-[#1B1F3E]">
+        <footer class="footer sm:footer-horizontal container mx-auto  text-white p-10">
+            <aside>
+             
+                <p class="leading-6">
+                    Welcome to [Your Weapon Shop Name] – your trusted destination for top-quality firearms, accessories, and expert training! Whether you're a seasoned enthusiast or a first-time buyer, we're here to provide you with the best products and services to meet your needs. Our friendly and knowledgeable staff are dedicated to helping you find the perfect weapon and offering personalized advice to ensure safe, responsible ownership.
+                </p>
+            </aside>
+            <nav>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">Contact Us</a>
+                <a class="link link-hover">Terms & Condition</a>
+                <a class="link link-hover">Privacy Policy</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Support</h6>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Help Center</a>
+                <a class="link link-hover">How it works</a>
+                <a class="link link-hover">Packages</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Social Media Link</h6>
+                <a class="link link-hover">Facebook</a>
+                <a class="link link-hover">Instagram</a>
+                <a class="link link-hover">Linkedin</a>
+                <a class="link link-hover">Youtube</a>
+            </nav>
+        </footer>
+    </section>
+</body>
+
+</html>
